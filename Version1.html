@@ -12,20 +12,35 @@
    <nav class="navbar navbar-light bg-light">
         <span class="navbar-brand mb-0 h1"><img class="Swedbank" src="swedbank_logo.png" alt="swedbank"></span>
         
-    <h2 class="swedbankSaldo"></h2>
+    <span class="swedbankSaldo"></span>
 </nav>
 </div>
 <div class="Navbar">
 <nav class="navbar navbar-light bg-light">
         <span class="navbar-brand mb-0 h1"><img class="Nordea" src="Nordea.png" alt="nordea"></span>
 
-    <h2> 50000kr </h2>
+    <span class="nordeaSaldo"> 50000SEK </span>
 </nav>
+</div>
+<div class="Navbar">
+    <nav class="navbar navbar-light bg-light">
+            <span class="navbar-brand mb-0 h1">Summa:</span>
+    
+        <span class="totalSaldo"></span>
+    </nav>
 </div>
 <script src="api.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="apiJavascript.js">
 
+</script>
+<script>
+    var Summering = $('span.saldo');
+    console.log($('h2.swedbankSaldo').text()+'swedbank');
+    var swedbankSaldo = $('h2.swedbankSaldo').text().replace('/SEK/g',' ');
+var nordeaSaldo = $('h2.nordeaSaldo').text().replace('/kr/g',' ');
+var summa = swedbankSaldo+nordeaSaldo;
+Summering.append(summa);
 </script>
 
 </body>
