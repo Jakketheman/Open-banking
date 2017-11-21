@@ -19,9 +19,12 @@ span.swedbankSaldo, span.nordeaSaldo, span.totalSaldo{
 div.Navbar + div{
 	display:none;
 }
+<<<<<<< Updated upstream
 
 .Slider{
     height: 40px;
     width: 1000px;
     margin: 20px;
 }
+=======
+>>>>>>> Stashed changes
