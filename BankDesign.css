@@ -19,3 +19,9 @@ span.swedbankSaldo, span.nordeaSaldo, span.totalSaldo{
 div.Navbar + div{
 	display:none;
 }
+
+.Slider{
+    height: 40px;
+    width: 1000px;
+    margin: 20px;
+}
