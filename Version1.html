@@ -7,7 +7,13 @@
 <link rel="stylesheet" href="BankDesign.css">
 </head>
 <body>
-   <h1> Tillgångar </h1> 
+        <div class="container" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </div> 
+   <h1> Tillgångar </h1>
+  
   <div class="Navbar">
    <nav class="navbar navbar-light bg-light">
         <span class="navbar-brand mb-0 h1"><img class="Swedbank" src="swedbank_logo.png" alt="swedbank"></span>
@@ -15,12 +21,7 @@
 	</nav>
 </div>
 <div class="slideMenu">
-    <div class="Slider">
-        <nav class="navbar navbar-light bg-light">
-                <span class="navbar-brand mb-0 h1"><img class="Swedbank" src="swedbank_logo.png" alt="swedbank"></span>
-                <span class="swedbankSaldo"></span>
-            </nav>
-        </div>
+	Visa någonting
 </div>
 <div class="Navbar">
 	<nav class="navbar navbar-light bg-light">
@@ -54,6 +55,11 @@ var nordeaSaldo = $('h2.nordeaSaldo').text().replace('/kr/g',' ');
 var summa = swedbankSaldo+nordeaSaldo;
 Summering.append(summa);
 </script>
+<script>
+        function myFunction(x) {
+            x.classList.toggle("change");
+        }
+        </script>
 
 </body>
 
