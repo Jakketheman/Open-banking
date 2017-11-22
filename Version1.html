@@ -51,7 +51,7 @@
 	<nav class="navbar navbar-light">
         <span class="navbar-brand mb-0 h1"><img class="Nordea" src="Nordea.png" alt="nordea"></span>
         <i class="down"></i>
-        <span class="nordeaSaldo"> 50000SEK </span>
+        <span id="NordeaSumma" class="nordeaSaldo">50000SEK</span>
         
         
 	</nav>
@@ -60,8 +60,7 @@
                     <nav class="navbar navbar-light">
                         <span class="navbar-brand mb-0 h1">Sparkonto:</span>
                         <span class="nordeaSaldo"></span>
-                        
-                        <span class="nordeaSaldo"> 50SEK </span
+                        <span id="NordeaSparkonto1" class="nordeaSaldo"> 300SEK </span
                     </nav>
                 </div>
 
@@ -69,8 +68,7 @@
                         <nav class="navbar navbar-light">
                             <span class="navbar-brand mb-0 h1">Sparkonto 2:</span>
                             <span class="nordeaSaldo"></span>
-                            
-                            <span class="nordeaSaldo"> 50000SEK </span
+                            <span class="nordeaSaldo" id="NordeaSparkonto2"> 50000SEK </span
                         </nav>
                     </div>
 	</div>
@@ -92,17 +90,21 @@
 </script>
 
 <script>
-        function myFunction(x) {
-            x.classList.toggle("change");
-           // x.classlist.toggle("w3_open()");
-        }
-		function w3_open() {
-    document.getElementById("mySidebar").style.display = "block";
-}
-function w3_close() {
-    document.getElementById("mySidebar").style.display = "none";
-}
-        </script>
+    function myFunction(x) {
+        x.classList.toggle("change");
+        // x.classlist.toggle("w3_open()");
+    }
+    function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+    }
+    function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+    }
+
+   
+
+    raknaNordeaSaldo();
+</script>
 
 
 

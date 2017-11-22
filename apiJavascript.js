@@ -19,3 +19,15 @@ function raknaTotalSaldo(swedbankSaldo){
 	var totalSaldo = swedbankSaldo + nordeaSaldo;
 	$('span.totalSaldo').html(totalSaldo + konto.currency);
 }
+
+function raknaNordeaSaldo(){
+	var Nordea1 = $('#NordeaSparkonto1').text().replace('SEK','');
+	var Nordea1Saldo = parseInt(Nordea1);
+
+	var Nordea2 = $('#NordeaSparkonto2').text().replace('SEK','');
+	var Nordea2Saldo = parseInt(Nordea2);
+
+	var totalSaldo = Nordea1Saldo + Nordea2Saldo;
+
+	$('#NordeaSumma').text(totalSaldo + "SEK");
+}
