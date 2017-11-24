@@ -10,8 +10,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="BankDesign.css">
+    <link rel="stylesheet" href="BankDesign.css">
+    <script src="apiJavascript.js"></script>
 
+
+    
 </head>
 <body>
         
@@ -46,16 +49,17 @@
                 </div>
               </div>
             </div>                 
-        
-    
                          <div class="Knapp2">
+         
+           
+            <div class="Knapp2">
               <div class="container">
                     <div class="dropdown">
-                      <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Välj bank:</button>
-                      <ul class="dropdown-menu">
+                      <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Välj bank:                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                         <li class="dropdown-header">Banker</li>
-                        <li><a href="#">Nordea</a></li>
-                        <li><a href="#">Swedbank</a></li>
+                        <li><a href="#" data-value="Nordea">Nordea</a></li>
+                        <li><a href="#" data-value="Swedbank">Swedbank</a></li>
                         <li class="divider"></li>
                         <li class="dropdown-header">Dropdown header 2</li>
                         <li><a href="#">About Us</a></li>
@@ -93,9 +97,8 @@
                                       </div>
                                     </div>
                                   </div>
-    
-                
-   
+                                  
+
 
 <script>
     function myFunction(x) {
@@ -109,5 +112,8 @@ function w3_close() {
     document.getElementById("mySidebar").style.display = "none";
 }
 </script>
+
+
+
 </body>
 </html>
