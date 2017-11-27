@@ -10,7 +10,7 @@ var konto;
 		raknaTotalSaldo(konto.saldo);
 	});
 	
-	
+	raknaNordeaSaldo();
 }(jQuery));
 
 function raknaTotalSaldo(swedbankSaldo){

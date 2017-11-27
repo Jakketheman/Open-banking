@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">        
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Open banking</title>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="BankDesign.css">
+
+</head>
+<body>
+<!--<div class="main">
+	<div>
+		<div class="barButton">
+			  <div class="bar1"></div>
+			  <div class="bar2"></div>
+			  <div class="bar3"></div>
+		</div>
+		<div class="sideMenuBar">
+			<ul>
+				<li><a href="#" class="hiddenBar">SideBar1</a></li>
+				<li><a href="#" class="hiddenBar">SideBar2</a></li>
+				<li><a href="#" class="hiddenBar">SideBar3</a></li>
+			</ul>
+		</div>
+	</div>-->
+	<!--<div class="body">-->
+	<header>
+		<div class="barButton">
+			  <div class="bar1"></div>
+			  <div class="bar2"></div>
+			  <div class="bar3"></div>
+		</div>
+		<h1 class="Rubrik" > Tillgångar </h1> 
+	</header>
+	<div class="body">
+		<div class="sideMenuBar hiddenBar">
+				<ul>
+					<li><a href="#" >SideBar1</a></li>
+					<li><a href="#">SideBar2</a></li>
+					<li><a href="#">SideBar3</a></li>
+				</ul>
+		</div>
+		<div class="visaSaldo">
+	  <div class="Navbar">
+		   <nav class="navbar navbar-light">
+				<span class="navbar-brand mb-0 h1"><img class="Swedbank" src="swedbank_logo.png" alt="swedbank"></span>
+				<i class="down"></i>
+				<span class="swedbankSaldo"></span>
+			</nav>
+			<div class="slideMenu">
+				<div class="Slider">
+					<nav class="navbar navbar-light">
+						<span class="navbar-brand mb-0 h1">Sparkonto:</span>
+						<span class="swedbankSaldo"></span>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<div class="Navbar">
+			<nav class="navbar navbar-light">
+				<span class="navbar-brand mb-0 h1"><img class="Nordea" src="Nordea.png" alt="nordea"></span>
+				<i class="down"></i>
+				<span class="nordeaSaldo"> 50000SEK </span>
+			</nav>
+			<div class="slideMenu">
+				<div class="Slider">
+					<nav class="navbar navbar-light">
+						<span class="navbar-brand mb-0 h1">Sparkonto:</span>
+						<span class="nordeaSaldo"></span>
+						<span class="nordeaSaldo"> 50SEK </span>
+					</nav>
+				</div>
+				<div class="Slider">
+					<nav class="navbar navbar-light">
+						<span class="navbar-brand mb-0 h1">Sparkonto 2:</span>
+						<span class="nordeaSaldo"></span>
+						<span class="nordeaSaldo"> 50000SEK </span>
+					</nav>
+				  </div>
+			</div>
+		</div>
+		<div class="Navbar">
+			<nav class="navbar navbar-light">
+				<span class="navbar-brand mb-0 h1">Summa:</span>
+				<span class="totalSaldo"></span>
+			</nav>
+		</div>
+		</div>
+	</div>
+	<!--</div>-->
+<!--</div>-->
+<script src="api.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="apiJavascript.js"></script>
+<script src="animation.js"></script>
+
+</script>
+
+<script>
+
+$('div.barButton').on('click',function(e){
+				$(this).toggleClass('change');
+				//$('div.sideMenuBar').slideToggle();
+				/*$('div.sideMenuBar').toggleClass('hiddenBar');
+				if($('div.sideMenuBar').hasClass('hiddenBar')){
+					$('div.sideMenuBar').animate('margin-left',0);
+				}else {
+					$('div.sideMenuBar').animate('margin-left','-100px');
+				}*/
+				$('div.sideMenuBar').toggleClass('hiddenBar');
+				$('div.sideMenuBar').animate('margin-left','0');
+			});
+        </script>
+
+
+
+
+</body>
+
+</html>
