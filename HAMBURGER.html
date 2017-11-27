@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">        
+		<style>
+		.barContainer {
+			display: inline-block;
+			cursor: pointer;
+			padding:20px;
+			border:1px solid #000;
+			background-color:white;
+		}
+
+		.bar1, .bar2, .bar3 {
+			width: 35px;
+			height: 5px;
+			background-color: #333;
+			margin: 6px 0;
+			transition: 0.4s;
+		}
+
+		.change .bar1 {
+			-webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+			transform: rotate(-45deg) translate(-9px, 6px) ;
+		}
+
+		.change .bar2 {opacity: 0;}
+
+		.change .bar3 {
+			-webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+			transform: rotate(45deg) translate(-8px, -8px) ;
+		}
+		ul{
+			padding-left:0;
+		}
+		li{
+			list-style-type:none;
+		}
+		nav{
+			background-color:none;
+			display:inline-block;
+			width:100px;
+			text-align:center;
+			padding:20px;
+		}
+		div.sideBar{
+			width:80px;
+			display:none;
+		}
+</style>
+</head>
+<body>
+
+	<p>Click on the Menu Icon to transform it to "X":</p>
+	<nav>
+		<div class="barContainer">
+			  <div class="bar1"></div>
+			  <div class="bar2"></div>
+			  <div class="bar3"></div>
+		</div>
+		<div class="sideBar">
+			<ul>
+				<li><a href="#">SideBar1</a></li>
+				<li><a href="#">SideBar2</a></li>
+				<li><a href="#">SideBar3</a></li>
+			</ul>
+		</div>
+	</nav>
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+		<script>
+			$('div.barContainer').on('click',function(){
+				$(this).toggleClass('change');
+				$('div.sideBar').slideToggle();
+			});
+			
+		</script>
+	</body>
+</html>
