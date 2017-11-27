@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="BankDesign.css">
+<link rel="stylesheet" href="OverforingDesign.css">
 
 </head>
 <body>
@@ -30,11 +30,11 @@
         <h1 class="Rubrik">Överföring</h1>
     
 
- 
-        <div class="Knapp2">
-            <div class="container">
+        <div class="selectMenu">
+          <h2>Från:</h2>
+            <div class="Knapp3 KnappLeft">
                 <div class="dropdown">
-                  <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Välj bank:</button>
+                  <button class="btn btn-default dropdown-toggle " type="button" data-toggle="dropdown">Välj bank:</button>
                   <ul class="dropdown-menu">
                     <li class="dropdown-header">Banker</li>
                     <li><a href="#">Nordea</a></li>
@@ -45,54 +45,63 @@
                   </ul>
                 </div>
               </div>
-            </div>                 
-        
-    
-                         <div class="Knapp2">
-              <div class="container">
+              <div class="Knapp3 KnappRight">
                     <div class="dropdown">
-                      <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Välj bank:</button>
+                      <button class="btn btn-default dropdown-toggle d-inline" type="button" data-toggle="dropdown">Välj konto:</button>
                       <ul class="dropdown-menu">
                         <li class="dropdown-header">Banker</li>
-                        <li><a href="#">Nordea</a></li>
-                        <li><a href="#">Swedbank</a></li>
+                        <li><a href="#">Sparkonto</a></li>
+                        <li><a href="#">Fondkonto</a></li>
                         <li class="divider"></li>
                         <li class="dropdown-header">Dropdown header 2</li>
-                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Om oss</a></li>
                       </ul>
-                    </div>
                   </div>
+              </div>
+              
+        </div>
+
+
+            
+                
+        <div class="selectMenu">
+            <h2>Till: </h2>
+            <div class="Knapp3 KnappLeft">
+                <div class="dropdown">
+                  <button class="btn btn-default dropdown-toggle " type="button" data-toggle="dropdown">Välj bank:</button>
+                  <ul class="dropdown-menu">
+                    <li class="dropdown-header">Banker</li>
+                    <li><a href="#">Nordea</a></li>
+                    <li><a href="#">Swedbank</a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">Dropdown header 2</li>
+                    <li><a href="#">Om oss</a></li>
+                  </ul>
                 </div>
-                <div class="Knapp2">
-                        <div class="container">
-                              <div class="dropdown">
-                                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Välj konto:</button>
-                                <ul class="dropdown-menu">
-                                  <li class="dropdown-header">Konton</li>
-                                  <li><a href="#">Sparkonto</a></li>
-                                  <li><a href="#">Fondkonto</a></li>
-                                  <li class="divider"></li>
-                                  <li class="dropdown-header">Dropdown header 2</li>
-                                  <li><a href="#">About Us</a></li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="Knapp2">
-                                <div class="container">
-                                      <div class="dropdown">
-                                        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Välj konto:</button>
-                                        <ul class="dropdown-menu">
-                                          <li class="dropdown-header">Konton</li>
-                                          <li><a href="#">Sparkonto</a></li>
-                                          <li><a href="#">Fondkonto</a></li>
-                                          <li class="divider"></li>
-                                          <li class="dropdown-header">Dropdown header 2</li>
-                                          <li><a href="#">About Us</a></li>
-                                        </ul>
-                                      </div>
-                                    </div>
-                                  </div>
+              </div>
+              <div class="Knapp3 KnappRight">
+                    <div class="dropdown">
+                      <button class="btn btn-default dropdown-toggle d-inline" type="button" data-toggle="dropdown">Välj konto:</button>
+                      <ul class="dropdown-menu">
+                        <li class="dropdown-header">Banker</li>
+                        <li><a href="#">Sparkonto</a></li>
+                        <li><a href="#">Fondkonto</a></li>
+                        <li class="divider"></li>
+                        <li class="dropdown-header">Dropdown header 2</li>
+                        <li><a href="#">Om oss</a></li>
+                      </ul>
+                  </div>
+              </div>
+        </div>
+        <h3>Belopp:</h3>
+        <div class="form-group"> 
+            <input type="text"  class="form-control" id="usr">  
+            
+          </div>
+         
+          <button type="button" class="btn btn-outline-info">Överför</button>
+                                 
+                                    
     
                 
    
