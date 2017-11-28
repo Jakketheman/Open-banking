@@ -5,108 +5,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Open banking</title>
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="BankDesign.css">
+	<link rel="stylesheet" href="BankDesign.css">
 
 </head>
 <body>
+	    
+	<nav id="nav">
+		<div class="innertube">
+            <div class="barButton">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</div>
+			<div class="sideMenuBar hiddenBar">
+				<ul>
+					<li><a href="#"><!--HREF Där skriver man URL-->Tillgångar</a></li>
+					<li><a href="Överföring.html">Överföring</a></li>
+				</ul>
+			</div>
+		</div>
+    </nav>
+	<div class="body">
+		<h1 class="Rubrik" > Tillgångar </h1>
 
-        <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
-                <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
-                <a href="#" class="w3-bar-item w3-button">Link 1</a>
-                <a href="#" class="w3-bar-item w3-button">Link 2</a>
-                <a href="#" class="w3-bar-item w3-button">Link 3</a>
-              </div>
-        <div class="container" onclick="myFunction(this)">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-        </div> 
-  
-
-   <h1 class="Rubrik" > Tillgångar </h1> 
-  <div class="Navbar">
-       <nav class="navbar navbar-light">
-           
-            <span class="navbar-brand mb-0 h1"><img class="Swedbank" src="swedbank_logo.png" alt="swedbank"></span>
-            <i class="down"></i>
-            <span class="swedbankSaldo"></span>
-            
-        </nav>
-               
-        
-		<div class="slideMenu">
-			<div class="Slider">
+		<div class="visaSaldo">
+			<div class="Navbar">
+				<nav class="navbar navbar-light"> 
+					<span class="navbar-brand mb-0 h1"><img class="Swedbank" src="swedbank_logo.png" alt="swedbank"></span>
+					<i class="down"></i>
+					<span class="swedbankSaldo"></span>
+				 </nav>
+				<div class="slideMenu">
+					<div class="Slider">
+						<nav class="navbar navbar-light">
+							<span class="navbar-brand mb-0 h1">Sparkonto:</span>
+							<span class="swedbankSaldo"></span>
+						</nav>
+					</div>
+				</div>
+			</div>
+			<div class="Navbar">
 				<nav class="navbar navbar-light">
-					<span class="navbar-brand mb-0 h1">Sparkonto:</span>
-                    <span class="swedbankSaldo"></span>
-                    
-                    
+					<span class="navbar-brand mb-0 h1"><img class="Nordea" src="Nordea.png" alt="nordea"></span>
+					<i class="down"></i>
+					<span id="NordeaSumma" class="nordeaSaldo">50000SEK</span>
+				</nav>
+				<div class="slideMenu">
+					<div class="Slider">
+						<nav class="navbar navbar-light">
+							<span class="navbar-brand mb-0 h1">Sparkonto:</span>
+							<span class="nordeaSaldo"></span>
+							<span id="NordeaSparkonto1" class="nordeaSaldo"> 300SEK </span>
+						</nav>
+					</div>
+					<div class="Slider">
+                        <nav class="navbar navbar-light">
+                            <span class="navbar-brand mb-0 h1">Sparkonto 2:</span>
+                            <span class="nordeaSaldo"></span>
+                            <span class="nordeaSaldo" id="NordeaSparkonto2"> 50000SEK </span>
+                        </nav>
+                    </div>
+				</div>
+			</div>
+			<div class="Navbar">
+				<nav class="navbar navbar-light">
+					<span class="navbar-brand mb-0 h1">Summa:</span>
+					<span class="totalSaldo"></span>
 				</nav>
 			</div>
 		</div>
 	</div>
 
-<div class="Navbar">
-	<nav class="navbar navbar-light">
-        <span class="navbar-brand mb-0 h1"><img class="Nordea" src="Nordea.png" alt="nordea"></span>
-        <i class="down"></i>
-        <span id="NordeaSumma" class="nordeaSaldo">50000SEK</span>
-	</nav>
-	<div class="slideMenu">
-            <div class="Slider">
-                    <nav class="navbar navbar-light">
-                        <span class="navbar-brand mb-0 h1">Sparkonto:</span>
-                        <span class="nordeaSaldo"></span>
-                        <span id="NordeaSparkonto1" class="nordeaSaldo"> 300SEK </span
-                    </nav>
-                </div>
 
-                <div class="Slider">
-                        <nav class="navbar navbar-light">
-                            <span class="navbar-brand mb-0 h1">Sparkonto 2:</span>
-                            <span class="nordeaSaldo"></span>
-                            <span class="nordeaSaldo" id="NordeaSparkonto2"> 50000SEK </span
-                        </nav>
-                    </div>
-	</div>
-</div>
-
-<div class="Navbar">
-    <nav class="navbar navbar-light">
-		<span class="navbar-brand mb-0 h1">Summa:</span>
-        <span class="totalSaldo"></span>
-    </nav>
-
-</div>
 
 <script src="api.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="apiJavascript.js"></script>
 <script src="animation.js"></script>
-
-</script>
-
-<script>
-    function myFunction(x) {
-        x.classList.toggle("change");
-        // x.classlist.toggle("w3_open()");
-    }
-    function w3_open() {
-        document.getElementById("mySidebar").style.display = "block";
-    }
-    function w3_close() {
-        document.getElementById("mySidebar").style.display = "none";
-    }
-
-   
-
-    raknaNordeaSaldo();
-</script>
-
-
-
-
 </body>
 
 </html>

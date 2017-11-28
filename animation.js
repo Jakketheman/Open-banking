@@ -6,14 +6,12 @@
 		$(this).find('div.slideMenu').slideToggle();
 	});
 	$('div.barButton').on('click',function(e){
+		$('#nav').toggleClass('active');
 		$(this).toggleClass('change');
+		$('div.body').toggleClass('atCenter');
 		$('div.sideMenuBar').toggleClass('hiddenBar');
-		
 	});
 	
-	$('div.sideMenuBar').css({
-		'height':$('body').height(),
-		'width':$('div.barButton').outerWidth()
-	});
+	
 	$('div.barButton').css('height',$('header').height());
 }(jQuery));

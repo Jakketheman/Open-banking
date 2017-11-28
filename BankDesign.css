@@ -1,3 +1,9 @@
+html{
+	height:100%;
+}
+body{
+	height:100%;
+}
 .Rubrik{
     width: 500px;
     margin: 20px; 
@@ -87,53 +93,113 @@ i {
 		.main{
 			margin-bottom:50px;
 		}
-		.main>div{
-			
-		}
 		.main .body{
 			display:inline-block;
 		}
 		.barButton {
-			
 			cursor: pointer;
 			padding:20px;
 			background-color:white;
+			background-color:rgb(209, 230, 240);
+		}
+
 			
-		}
+#nav{
+    position: absolute;
+    top: 0;
+    bottom: 0; 
+    left: 0;
+    overflow: hidden; /* Disables scrollbars on the navigation frame. To enable scrollbars, change "hidden" to "scroll" */
+    background: rgb(209, 230, 240);
+	height:100px;
+	width:80px;
+	transition:0.2s;
+}
+#nav.active{
+	width:300px;
+	height:100%;
+}
+div.body {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    height: 70%;
+    width: 50%;
+    font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 82%;
+	transition:0.3s;
+	display:inline-block;
+    }
+div.atCenter{
+	left:30%;
+}
+.text{
+    position: absolute;
+    top: 5%;
+    left: 47%;
+}
+.text2{
+    position: absolute;
+    top: 10%;
+    left: 52%;
+}
 
-		.bar1, .bar2, .bar3 {
-			width: 35px;
-			height: 5px;
-			background-color: #333;
-			margin: 6px 0;
-			transition: 0.4s;
-		}
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+}
 
-		.change .bar1 {
-			-webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
-			transform: rotate(-45deg) translate(-9px, 6px) ;
-		}
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+	-ms-transform:rotate(-45deg) translate(-9px,6px);
+	-moz-transform:rotate(-45deg) translate(-9px,6px);
+	-o-trnasform:rotate(-45deg) trasnalte(-9px,6px);
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
 
-		.change .bar2 {opacity: 0;}
+.change .bar2 {opacity: 0;}
 
-		.change .bar3 {
-			-webkit-transform: rotate(45deg) translate(-8px, -8px) ;
-			transform: rotate(45deg) translate(-8px, -8px) ;
-		}
-		ul{
-			padding-left:0;
-		}
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+	-ms-transform:rotate(45deg) translate(-8px, -8px);
+	-o-transform:rotate(45deg) translate(-8px, -8px);
+	-moz-transform:rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}
 		li{
 			list-style-type:none;
 		}
-		nav{
-			background-color:none;
-			display:inline-block;
-			width:100px;
-			text-align:center;
-		}
 		div.sideMenuBar{
-			width:80px;
-			display:none;
+			display:inline-block;
+			background-color:lightgrey;
+			
+			transition: margin-left 0.4s;
+			background-color:rgb(209, 230, 240);
+		}
+		div.sideMenuBar ul{
+			height:400px;
+			font-size:25px;
+		}
+		div.sideMenuBar li{
+			margin-top:25px;
+		}
+		div.sideMenuBar a{
 			color:black;
 		}
+		div.sideMenuBar.hiddenBar{
+			margin-left:-1000px;
+		}
+		
+@media (max-width:768px){
+	#nav.active, #nav .innertube, #nav.barButton.change{
+		width:200px;
+	}
+	div.atCenter{
+		left:50%;
+	}
+	.Navbar{
+		width:350px;
+	}
+}
