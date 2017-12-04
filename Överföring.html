@@ -10,173 +10,106 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<<<<<<< HEAD
 <link rel="stylesheet" href="OverforingDesign.css">
-=======
-    <link rel="stylesheet" href="BankDesign.css">
-    <script src="apiJavascript.js"></script>
->>>>>>> master
-
-
-    
+<link rel="stylesheet" href="BankDesign.css">
+ 
 </head>
 <body>
         
-        <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
-                <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
-                <a href="#" class="w3-bar-item w3-button">Link 1</a>
-                <a href="#" class="w3-bar-item w3-button">Link 2</a>
-                <a href="#" class="w3-bar-item w3-button">Link 3</a>
-              </div>
-        <div class="container" onclick="myFunction(this)">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-        </div> 
-    
+	<nav id="nav">
+		<div class="innertube">
+            <div class="barButton">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</div>
+			<div class="sideMenuBar hiddenBar">
+				<ul>
+					<li><a href="Version1.html"><!--HREF Där skriver man URL-->Tillgångar</a></li>
+					<li><a href="#">Överföring</a></li>
+					<li><a href="Transaktioner.html">Transaktioner</a></li>
+				</ul>
+			</div>
+		</div>
+    </nav>
+	<div class="body">
         <h1 class="Rubrik">Överföring</h1>
-    
-
         <div class="selectMenu">
-          <h2>Från:</h2>
-            <div class="Knapp3 KnappLeft">
-                <div class="dropdown">
-                  <button class="btn btn-default dropdown-toggle " type="button" data-toggle="dropdown">Välj bank:</button>
-                  <ul class="dropdown-menu">
-                    <li class="dropdown-header">Banker</li>
-                    <li><a href="#">Nordea</a></li>
-                    <li><a href="#">Swedbank</a></li>
-                    <li class="divider"></li>
-                    <li class="dropdown-header">Dropdown header 2</li>
-                    <li><a href="#">Om oss</a></li>
-                  </ul>
-                </div>
-              </div>
-<<<<<<< HEAD
-              <div class="Knapp3 KnappRight">
-                    <div class="dropdown">
-                      <button class="btn btn-default dropdown-toggle d-inline" type="button" data-toggle="dropdown">Välj konto:</button>
-                      <ul class="dropdown-menu">
+            <h2>Från:</h2>
+              <div class="Knapp3 KnappLeft">
+                  <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle " type="button" data-toggle="dropdown">Välj bank:</button>
+                    <ul class="dropdown-menu">
+						<li class="dropdown-header">Banker</li>
+						<li><a href="#">Nordea</a></li>
+						<li><a href="#">Swedbank</a></li>
+						<li class="divider"></li>
+						<li class="dropdown-header">Dropdown header 2</li>
+						<li><a href="#">Om oss</a></li>
+                    </ul>
+				</div>
+            </div>
+			<div class="Knapp3 KnappRight">
+				<div class="dropdown">
+					<button class="btn btn-default dropdown-toggle d-inline" type="button" data-toggle="dropdown">Välj konto:</button>
+					<ul class="dropdown-menu">
                         <li class="dropdown-header">Banker</li>
                         <li><a href="#">Sparkonto</a></li>
                         <li><a href="#">Fondkonto</a></li>
-=======
-            </div>                 
-                         <div class="Knapp2">
-         
-           
-            <div class="Knapp2">
-              <div class="container">
-                    <div class="dropdown">
-                      <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Välj bank:                      </button>
-                      <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                        <li class="dropdown-header">Banker</li>
-                        <li><a href="#" data-value="Nordea">Nordea</a></li>
-                        <li><a href="#" data-value="Swedbank">Swedbank</a></li>
->>>>>>> master
                         <li class="divider"></li>
-                        <li class="dropdown-header">Dropdown header 2</li>
-                        <li><a href="#">Om oss</a></li>
-                      </ul>
-                  </div>
-              </div>
-              
-        </div>
-
-
-            
-                
-        <div class="selectMenu">
+						<li class="dropdown-header">Dropdown header 2</li>
+						<li><a href="#">Om oss</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>               
+		<div class="selectMenu">
             <h2>Till: </h2>
-            <div class="Knapp3 KnappLeft">
-                <div class="dropdown">
-                  <button class="btn btn-default dropdown-toggle " type="button" data-toggle="dropdown">Välj bank:</button>
-                  <ul class="dropdown-menu">
-                    <li class="dropdown-header">Banker</li>
-                    <li><a href="#">Nordea</a></li>
-                    <li><a href="#">Swedbank</a></li>
-                    <li class="divider"></li>
-                    <li class="dropdown-header">Dropdown header 2</li>
-                    <li><a href="#">Om oss</a></li>
-                  </ul>
-                </div>
-<<<<<<< HEAD
-              </div>
-              <div class="Knapp3 KnappRight">
-                    <div class="dropdown">
-                      <button class="btn btn-default dropdown-toggle d-inline" type="button" data-toggle="dropdown">Välj konto:</button>
-                      <ul class="dropdown-menu">
+			<div class="Knapp3 KnappLeft">
+				<div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle " type="button" data-toggle="dropdown">Välj bank:</button>
+					<ul class="dropdown-menu">
+						<li class="dropdown-header">Banker</li>
+						<li><a href="#">Nordea</a></li>
+						<li><a href="#">Swedbank</a></li>
+                        <li class="divider"></li>
+                        <li class="dropdown-header">Dropdown header 2</li>
+						<li><a href="#">Om oss</a></li>
+					</ul>
+				</div>
+             </div>
+             <div class="Knapp3 KnappRight">
+				<div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle d-inline" type="button" data-toggle="dropdown">Välj konto:</button>
+					<ul class="dropdown-menu">
                         <li class="dropdown-header">Banker</li>
                         <li><a href="#">Sparkonto</a></li>
                         <li><a href="#">Fondkonto</a></li>
                         <li class="divider"></li>
                         <li class="dropdown-header">Dropdown header 2</li>
-                        <li><a href="#">Om oss</a></li>
-                      </ul>
-                  </div>
-              </div>
+						<li><a href="#">Om oss</a></li>
+					</ul>
+				</div>
+			</div>
         </div>
         <h3>Belopp:</h3>
-        <div class="form-group"> 
-            <input type="text"  class="form-control" id="usr">  
-            
-          </div>
-         
-          <button type="button" class="btn btn-outline-info">Överför</button>
-                                 
-                                    
-    
-                
-   
-=======
-                <div class="Knapp2">
-                        <div class="container">
-                              <div class="dropdown">
-                                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Välj konto:</button>
-                                <ul class="dropdown-menu">
-                                  <li class="dropdown-header">Konton</li>
-                                  <li><a href="#">Sparkonto</a></li>
-                                  <li><a href="#">Fondkonto</a></li>
-                                  <li class="divider"></li>
-                                  <li class="dropdown-header">Dropdown header 2</li>
-                                  <li><a href="#">About Us</a></li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="Knapp2">
-                                <div class="container">
-                                      <div class="dropdown">
-                                        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Välj konto:</button>
-                                        <ul class="dropdown-menu">
-                                          <li class="dropdown-header">Konton</li>
-                                          <li><a href="#">Sparkonto</a></li>
-                                          <li><a href="#">Fondkonto</a></li>
-                                          <li class="divider"></li>
-                                          <li class="dropdown-header">Dropdown header 2</li>
-                                          <li><a href="#">About Us</a></li>
-                                        </ul>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  
-
->>>>>>> master
-
-<script>
-    function myFunction(x) {
-            x.classList.toggle("change");
-           // x.classlist.toggle("w3_open()");
-        }
-	function w3_open() {
-    document.getElementById("mySidebar").style.display = "block";
-}
-function w3_close() {
-    document.getElementById("mySidebar").style.display = "none";
-}
-</script>
-
-
-
-</body>
+		<form method="GET" action="Version1.html">
+			<div class="form-group"> 
+				<input type="text"  class="form-control" id="usr">
+			</div>
+			<button type="submit" class="btn btn-outline-info">Överför</button>
+		</form>
+	</div>
+    </body>
+	<script src="api.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="apiJavascript.js"></script>
+	<script src="animation.js"></script>
 </html>
+               
+ 
+                           
+                              
+
+          
+

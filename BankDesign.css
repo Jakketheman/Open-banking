@@ -13,10 +13,8 @@ body{
     width: 100px;
 }
 .Navbar{
-    width: 800px;
+    width: 1000px;
     margin: 20px;
-	cursor:pointer;
-    background-color: #A9A9A9;
     background-color: rgb(209, 230, 240);
 
     border-top-left-radius: 10px;   
@@ -88,6 +86,7 @@ i {
     -webkit-transform: rotate(45deg);
     
 }
+<<<<<<< HEAD
 
 /*test*/
 		.main{
@@ -121,7 +120,7 @@ i {
 }
 div.body {
     position: absolute;
-    top: 20%;
+    top: 0%;
     left: 10%;
     height: 70%;
     width: 50%;
@@ -193,13 +192,25 @@ div.atCenter{
 		}
 		
 @media (max-width:768px){
-	#nav.active, #nav .innertube, #nav.barButton.change{
-		width:200px;
+	#nav.active/*, #nav .innertube, #nav.barButton.change*/{
+		width:800px;
+		z-index:1000;
+	}
+	#nav.active+div.body{
+		left:80%;
+	}
+	div.body h1.Rubrik{
+		margin-left:40px;
 	}
 	div.atCenter{
-		left:50%;
+		left:25%;
 	}
+	
 	.Navbar{
-		width:350px;
+		width:250px;
+	}
+	
+	.scrollabletextbox{
+		width:100%;
 	}
 }

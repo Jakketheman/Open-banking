@@ -6,11 +6,15 @@ var konto;
 		saldo:response.balances[0].booked.amount.content,
 		currency: response.balances[0].booked.amount.currency
 	}
-		$('span.swedbankSaldo').html(konto.saldo + konto.currency);
+		$('span.swedbankSaldo').text(konto.saldo + konto.currency);
+		$('button.belopp').on('click',function(){
+			 saldoOverforing();
+		});
+			
 		raknaTotalSaldo(konto.saldo);
 	});
 	
-	raknaNordeaSaldo();
+	
 }(jQuery));
 
 function raknaTotalSaldo(swedbankSaldo){
@@ -30,4 +34,15 @@ function raknaNordeaSaldo(){
 	var totalSaldo = Nordea1Saldo + Nordea2Saldo;
 
 	$('#NordeaSumma').text(totalSaldo + "SEK");
+}
+function saldoOverforing(){
+	var saldo = konto.saldo;
+	var swedbankSaldoText = $('span.swedbankSaldo').text();
+	var swedbankSaldoPengar = parseInt(swedbankSaldoText);
+	var inputText = $('input#usr').text();
+	var textBelopp = parseInt(inputText);
+	swedbankSaldoText = swedbankSaldoPengar - textBelopp;
+	localStorage.setItem('swedbank',swedbankSaldoText);
+	$('span.swedbankSaldo').text(swedbankSaldoText + konto.currency);
+	
 }

@@ -1,64 +1,98 @@
-.Rubrik{
-    width: 500px;
-    margin: 20px; 
-    text-decoration: underline;
-}
-#nav{
-    position: absolute;
-    top: 0;
-    bottom: 0; 
-    left: 0;
-    width: 230px; /* Width of navigation frame */
-    height: 100%;
-    overflow: hidden; /* Disables scrollbars on the navigation frame. To enable scrollbars, change "hidden" to "scroll" */
-    background: rgb(209, 230, 240);
+
+.Rubrik{ 
+    width: 500px; 
+    margin: 20px;  
+    text-decoration: underline; 
+} 
+#nav{ 
+    position: absolute; 
+    top: 0; 
+    bottom: 0;  
+    left: 0; 
+    width: 230px; /* Width of navigation frame */ 
+    height: 100%; 
+    overflow: hidden; /* Disables scrollbars on the navigation frame. To enable scrollbars, change "hidden" to "scroll" */ 
+    background: rgb(209, 230, 240); 
+} 
+ 
+.scrollabletextbox { 
+    position: absolute; 
+    top: 20%; 
+    left: 30%; 
+    height: 90%; 
+    width: 50%; 
+    font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif; 
+    font-size: 82%; 
+    overflow: scroll; 
+    border:1px solid black; 
+    overflow: scroll; 
+    } 
+.text{ 
+    position: absolute; 
+    top: 5%; 
+    left: 47%; 
+} 
+.text2{ 
+    position: absolute; 
+    top: 10%; 
+    left: 52%; 
+} 
+.container { 
+    display: inline-block; 
+    cursor: pointer; 
+    margin: 6px; 
+    width: 60px; 
+     
+} 
+.bar1, .bar2, .bar3 { 
+    width: 35px; 
+    height: 5px; 
+    background-color: #333; 
+    margin: 6px 0; 
+    transition: 0.4s; 
+} 
+ 
+.change .bar1 { 
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ; 
+  -ms-transform:rotate(-45deg) translate(-9px,6px); 
+  -moz-transform:rotate(-45deg) translate(-9px,6px); 
+  -o-trnasform:rotate(-45deg) trasnalte(-9px,6px); 
+    transform: rotate(-45deg) translate(-9px, 6px) ; 
+} 
+ 
+.change .bar2 {opacity: 0;} 
+ 
+.change .bar3 { 
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ; 
+  -ms-transform:rotate(45deg) translate(-8px, -8px); 
+  -o-transform:rotate(45deg) translate(-8px, -8px); 
+  -moz-transform:rotate(45deg) translate(-8px, -8px); 
+    transform: rotate(45deg) translate(-8px, -8px) ; 
 }
 
-.scrollabletextbox {
-    position: absolute;
-    top: 20%;
-    left: 30%;
-    height: 70%;
-    width: 50%;
-    font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;
-    font-size: 82%;
-    overflow: scroll;
-    border:1px solid black;
-    overflow: scroll;
-    }
-.text{
-    position: absolute;
-    top: 5%;
-    left: 47%;
+/*Table*/
+table{
+	width:100%;
+	font-size:16px;
 }
-.text2{
-    position: absolute;
-    top: 10%;
-    left: 52%;
+table th{
+	text-align:center;
+	font-weight:normal;
+	border-bottom:1px solid rgba(0,0,0,0.3);
+	padding:7px;
 }
-
-.bar1, .bar2, .bar3 {
-    width: 35px;
-    height: 5px;
-    background-color: #333;
-    margin: 6px 0;
-    transition: 0.4s;
+table th:not(:last-child){
+	border-right:1px solid rgba(0,0,0,0.3);
 }
-
-.change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
-	-ms-transform:rotate(-45deg) translate(-9px,6px);
-	-moz-transform:rotate(-45deg) translate(-9px,6px);
-	-o-trnasform:rotate(-45deg) trasnalte(-9px,6px);
-    transform: rotate(-45deg) translate(-9px, 6px) ;
+table td{
+	padding:10px;
 }
-
-.change .bar2 {opacity: 0;}
-
-.change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
-	-ms-transform:rotate(45deg) translate(-8px, -8px);
-	-o-transform:rotate(45deg) translate(-8px, -8px);
-	-moz-transform:rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-8px, -8px) ;
+table td:first-child{
+	text-align:right;
+}
+table tr:nth-child(2n+1):not(:first-child){
+	background-color:rgba(211,211,211,0.5);
+}
+table tr:nth-child(2n){
+	background-color:rgba(211,211,211,0.2);
 }

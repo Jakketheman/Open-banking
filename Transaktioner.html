@@ -1,67 +1,58 @@
-<!Doctype html>
-<html lang="sv">
-        <head>
-                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">        
-                <meta charset="UTF-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1">
-                <title>Open banking</title>
-                <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-                <meta name="viewport" content="width=device-width, initial-scale=1">
-                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-            <link rel="stylesheet" href="TransaktionDesign.css">
-            
-            </head>
-<body>
-       
-    <div class="innertube">
-        
-        <h1>Heading</h1>
-        <p><script>generateText(300)</script></p>
-        
-    </div>
-</main>
 
-<nav id="nav">
-    <div class="innertube">
-            <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
-                    <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
-                    <a href="#" class="w3-bar-item w3-button">Link 1</a>
-                    <a href="#" class="w3-bar-item w3-button">Link 2</a>
-                    <a href="#" class="w3-bar-item w3-button">Link 3</a>
-                  </div>
-            <div class="container" onclick="myFunction(this)">
-                    <div class="bar1"></div>
-                    <div class="bar2"></div>
-                    <div class="bar3"></div>
-            </div> 
-    <h2 class="Rubrik">Transaktioner</h2>
-    <h3>Swedbank</h3>
-    <ul>
-        <li><a href="#">Konto</a></li>
-        <li><a href="#">SparKonto</a></li>
-        <li><a href="#">Fonder</a></li>
-        <li><a href="#">Aktier</a></li>
-    </ul>
-    </div>
+<!Doctype html> 
+<html lang="sv"> 
+        <head> 
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">         
+                <meta charset="UTF-8"> 
+                <meta name="viewport" content="width=device-width, initial-scale=1"> 
+                <title>Open banking</title> 
+                <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+                <meta name="viewport" content="width=device-width, initial-scale=1"> 
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+				<link rel="stylesheet" href="TransaktionDesign.css"> 
+             <link rel="stylesheet" href="BankDesign.css">
+            </head> 
+<body> 
+     
+ 
+
+	<nav id="nav">
+		<div class="innertube">
+            <div class="barButton">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</div>
+			<div class="sideMenuBar hiddenBar">
+				<ul>
+					<li><a href="Version1.html"><!--HREF Där skriver man URL-->Tillgångar</a></li>
+					<li><a href="Överföring.html">Överföring</a></li>
+					<li><a href="#">Transaktioner</a></li>
+				</ul>
+			</div>
+		</div>
     </nav>
-    <h1 class="text">Transaktioner</h1>
-    <h3 class="text2">Konto</h3>
-    <div class="scrollabletextbox" name="note" value=""></textarea></div>
-
-
-    <script>
-            function myFunction(x) {
-                    x.classList.toggle("change");
-                   // x.classlist.toggle("w3_open()");
-                }
-            function w3_open() {
-            document.getElementById("mySidebar").style.display = "block";
-        }
-        function w3_close() {
-            document.getElementById("mySidebar").style.display = "none";
-        }
-        </script>
-</body>
+	<div class="body">
+		<h1 class="text">Transaktioner</h1> 
+		<h3 class="text2">Konto</h3> 
+		<div class="scrollabletextbox" name="note">
+			<table class="transaktionList">
+				<tr>
+					<th>Pengar</th>
+					<th>Valuta</th>
+					<th>Data från</th>
+					<th>Data till</th>
+				</tr>
+				
+			</table>
+		</div> 
+	</div>
+	<script src="api.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="apiJavascript.js"></script>
+	<script src="animation.js"></script>
+	<script src="Transaktioner.js"></script>
+</body> 
 </html>
