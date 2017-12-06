@@ -1,59 +1,121 @@
-html{
+/*CSS ORDNING
+1. HTML, BODY och lite taggar
+2. main body
+3. sidnavbar
+4. typeface and fonts
+*/
+/*html, body och lite html taggar*/
+html,body{
+	margin:0;
+	padding:0;
 	height:100%;
 }
 body{
+	background-image:url('https://www.sourcedogg.com/wp-content/uploads/2013/11/iStock_000005418354Small.jpg');
+	background-size:100%;
+	background-repeat:no-repeat;
+}
+.selectMenu h2{
+    font-size: 1.0em;
+    padding: 8px;
+}
+.selectMenu +h3{
+    font-size: 1.0em;
+    margin-left: 20px;  
+}
+/*main body*/
+div.container{
+	background-color:white;
 	height:100%;
+	padding-left:0;
+	
+}
+div.body{
+	display:inline-block;
+	vertical-align:top;
+	height:100%;
+	font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 82%;
+	transition:0.3s;
+	margin-left:30px;
+	text-align:center;
 }
 .Rubrik{
     width: 500px;
     margin: 20px; 
 }
-.Swedbank{
-    height: 40px;
-    width: 100px;
+.Swedbank, .Nordea{
+	width:100px;
+	height:40px;
 }
 .Navbar{
-    width: 1000px;
+    width: 600px;
     margin: 20px;
     background-color: rgb(209, 230, 240);
-
-    border-top-left-radius: 10px;   
-    border-bottom-left-radius: 10px;
-    border-top-right-radius: 10px;          
-    border-bottom-right-radius: 10px;
-    
     border-top-left-radius: 7px;
-    
     border-bottom-left-radius: 7px;
-    border-top-right-radius: 7px;
-    
     border-bottom-right-radius: 7px;
 
 }
-
-.Nordea{
-    height: 40px;
-    width: 100px;
-}
-
 span.swedbankSaldo, span.nordeaSaldo, span.totalSaldo{
     font-weight:bold;
     font-size:2em;
 }
-div.Navbar > div{
-    display:none;
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
 }
-.container {
-    display: inline-block;
-    cursor: pointer;
+.selectMenu{
+    position: relative;
+    width: 600px;
+    height: 80px;
+    border-radius: 10px;
+    margin: 20px;
+    background-color: rgb(209, 230, 240);
+    display: flex;
 }
-
+/*sidnavbar*/
+#nav{
+	display:inline-block;
+	overflow:hidden;
+	background: rgb(209, 230, 240);
+	height:100px;
+	width:80px;
+	transition:0.2s;
+}
+#nav.active{
+	width:200px;
+	height:100%;
+}
+li{
+	list-style-type:none;
+}
+div.sideMenuBar{
+	display:inline-block;
+	transition: margin-left 0.4s;
+	background-color:rgb(209, 230, 240);
+}
+div.sideMenuBar ul{
+	height:100%;
+	font-size:25px;
+}
+div.sideMenuBar li{
+	margin-top:25px;
+}
+div.sideMenuBar a{
+	color:black;
+}
+.barButton {
+	cursor: pointer;
+	padding:20px;
+	background-color:white;
+	background-color:rgb(209, 230, 240);
+}
 .bar1, .bar2, .bar3 {
     width: 35px;
     height: 5px;
     background-color: #333;
     margin: 6px 0;
-    transition: 0.4s;
 }
 
 .change .bar1 {
@@ -73,6 +135,10 @@ div.Navbar > div{
 	-moz-transform:rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px) ;
 }
+div.sideMenuBar.hiddenBar{
+			margin-left:-1000px;
+		}
+/*typeface and fonts*/
 i {
   border: solid black;
   border-width: 0 3px 3px 0;
@@ -81,136 +147,101 @@ i {
   text-align: center;
 }
 
-.down {
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    
+/*buttons*/
+.Knapp3{
+    margin-top: 5px;
+    flex: 1 1 auto;
+    padding: 20px;
 }
-<<<<<<< HEAD
-
-/*test*/
-		.main{
-			margin-bottom:50px;
-		}
-		.main .body{
-			display:inline-block;
-		}
-		.barButton {
-			cursor: pointer;
-			padding:20px;
-			background-color:white;
-			background-color:rgb(209, 230, 240);
-		}
-
-			
-#nav{
-    position: absolute;
-    top: 0;
-    bottom: 0; 
-    left: 0;
-    overflow: hidden; /* Disables scrollbars on the navigation frame. To enable scrollbars, change "hidden" to "scroll" */
-    background: rgb(209, 230, 240);
-	height:100px;
-	width:80px;
-	transition:0.2s;
+.selectMenu .KnappLeft{
+    /*float: left;*/
+    margin-left: 20px;
 }
-#nav.active{
+.form-group{
+    width: 150px;
+    margin-left: 20px;
+}
+.btn-outline-info{
+    background-color: rgb(209, 230, 240);
+    margin-left: 20px;
+    color: black;
+}
+/*form*/
+div.form-group{
+	height:50px;
 	width:300px;
-	height:100%;
 }
-div.body {
-    position: absolute;
-    top: 0%;
-    left: 10%;
-    height: 70%;
-    width: 50%;
-    font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;
+div.form-group label, div.form-group input, div.form-group button{
+	float:left;
+}
+div.form-group input{
+	width:150px;
+}
+div.form-group button{
+	margin-left:5px;
+}
+/*table*/
+.scrollabletextbox{
+	width:500px;
+	height:500px;
+	 font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;
     font-size: 82%;
-	transition:0.3s;
-	display:inline-block;
-    }
-div.atCenter{
-	left:30%;
+    overflow: scroll;
+    border:1px solid black;
 }
-.text{
-    position: absolute;
-    top: 5%;
-    left: 47%;
+table{
+	width:100%;
+	font-size:16px;
 }
-.text2{
-    position: absolute;
-    top: 10%;
-    left: 52%;
+table th{
+	text-align:center;
+	font-weight:normal;
+	border-bottom:1px solid rgba(0,0,0,0.3);
+	padding:7px;
 }
-
-.bar1, .bar2, .bar3 {
-    width: 35px;
-    height: 5px;
-    background-color: #333;
-    margin: 6px 0;
+table th:not(:last-child){
+	border-right:1px solid rgba(0,0,0,0.3);
 }
-
-.change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
-	-ms-transform:rotate(-45deg) translate(-9px,6px);
-	-moz-transform:rotate(-45deg) translate(-9px,6px);
-	-o-trnasform:rotate(-45deg) trasnalte(-9px,6px);
-    transform: rotate(-45deg) translate(-9px, 6px) ;
+table td{
+	padding:10px;
 }
-
-.change .bar2 {opacity: 0;}
-
-.change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
-	-ms-transform:rotate(45deg) translate(-8px, -8px);
-	-o-transform:rotate(45deg) translate(-8px, -8px);
-	-moz-transform:rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-8px, -8px) ;
+table td:first-child{
+	text-align:right;
 }
-		li{
-			list-style-type:none;
-		}
-		div.sideMenuBar{
-			display:inline-block;
-			background-color:lightgrey;
-			
-			transition: margin-left 0.4s;
-			background-color:rgb(209, 230, 240);
-		}
-		div.sideMenuBar ul{
-			height:400px;
-			font-size:25px;
-		}
-		div.sideMenuBar li{
-			margin-top:25px;
-		}
-		div.sideMenuBar a{
-			color:black;
-		}
-		div.sideMenuBar.hiddenBar{
-			margin-left:-1000px;
-		}
-		
+table tr:nth-child(2n+1):not(:first-child){
+	background-color:rgba(211,211,211,0.5);
+}
+table tr:nth-child(2n){
+	background-color:rgba(211,211,211,0.2);
+}
 @media (max-width:768px){
+	body{
+		white-space:nowrap;
+	}
+	.body .Rubrik{
+		width:40px;
+		margin:0;
+		
+	}
+	div.body{
+		height:100%;
+		margin-left:0;
+		margin-top:100px;
+		
+	}
 	#nav.active/*, #nav .innertube, #nav.barButton.change*/{
-		width:800px;
+		width:200px;
 		z-index:1000;
+		
 	}
-	#nav.active+div.body{
-		left:80%;
-	}
-	div.body h1.Rubrik{
-		margin-left:40px;
-	}
-	div.atCenter{
-		left:25%;
-	}
-	
-	.Navbar{
+	div.Navbar{
+		height:100px;
 		width:250px;
+		position:relative;
+		left:-25%;
+		z-index:900;
 	}
-	
-	.scrollabletextbox{
-		width:100%;
+	#nav.active +div.body div.Navbar{
+		left:0.5%;
 	}
 }
