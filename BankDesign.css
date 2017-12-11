@@ -10,6 +10,7 @@ html,body{
 	padding:0;
 	height:100%;
 }
+
 body{
 	background-image:url('https://www.sourcedogg.com/wp-content/uploads/2013/11/iStock_000005418354Small.jpg');
 	background-size:100%;
@@ -78,12 +79,14 @@ span.swedbankSaldo, span.nordeaSaldo, span.totalSaldo{
 #nav{
 	display:inline-block;
 	overflow:hidden;
-	background: rgb(209, 230, 240);
+	background-color:white;
 	height:100px;
 	width:80px;
 	transition:0.2s;
 }
 #nav.active{
+	
+	background-color:rgb(209, 230, 240);
 	width:200px;
 	height:100%;
 }
@@ -108,8 +111,7 @@ div.sideMenuBar a{
 .barButton {
 	cursor: pointer;
 	padding:20px;
-	background-color:white;
-	background-color:rgb(209, 230, 240);
+	background-color:transparent;
 }
 .bar1, .bar2, .bar3 {
     width: 35px;
@@ -136,8 +138,8 @@ div.sideMenuBar a{
     transform: rotate(45deg) translate(-8px, -8px) ;
 }
 div.sideMenuBar.hiddenBar{
-			margin-left:-1000px;
-		}
+	margin-left:-1000px;
+}
 /*typeface and fonts*/
 i {
   border: solid black;
@@ -221,27 +223,38 @@ table tr:nth-child(2n){
 	.body .Rubrik{
 		width:40px;
 		margin:0;
-		
 	}
 	div.body{
-		height:100%;
+		height:400px;
+		position:relative;
+		left:-15%;
 		margin-left:0;
 		margin-top:100px;
-		
 	}
 	#nav.active/*, #nav .innertube, #nav.barButton.change*/{
 		width:200px;
 		z-index:1000;
-		
 	}
-	div.Navbar{
+	div.Navbar, div.selectMenu{
 		height:100px;
-		width:250px;
-		position:relative;
-		left:-25%;
 		z-index:900;
 	}
-	#nav.active +div.body div.Navbar{
+	div.Navbar{
+		width:250px;
+	}
+	
+	div.scrollabletextbox{
+		width:250px;
+		height:400px;
+	}
+	div.selectMenu{
+		width:300px;
+	}
+	div.Knapp3.KnappLeft, div.Knapp3.KnappRight{
+		margin:0;
+		padding-left:0;
+	}
+	#nav.active +div.body /*>div, #nav.active + div.body> h1.text*/{
 		left:0.5%;
 	}
 }

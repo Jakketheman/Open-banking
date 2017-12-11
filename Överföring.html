@@ -33,7 +33,7 @@
 					<div class="Knapp3 KnappLeft">
 						<div class="dropdown">
 							<button id="tableButton3" class="btn btn-default dropdown-toggle d-inline" type="button" data-toggle="dropdown">Välj bank:</button>
-							<ul id="tableMenu3" class="dropdown-menu">
+							<ul id="tableMenu3" class="dropdown-menu kontoFran">
 								<li class="dropdown-header">Banker</li>
 								<li><a href="#">Nordea</a></li>
 								<li><a href="#">Swedbank</a></li>
@@ -44,7 +44,7 @@
 					<div class="Knapp3 KnappRight">
 						<div class="dropdown">
 							<button id="tableButton2" class="btn btn-default dropdown-toggle d-inline" type="button" data-toggle="dropdown">Välj konto:</button>
-							<ul id="tableMenu2" class="dropdown-menu">
+							<ul id="tableMenu2" class="dropdown-menu kontoTill">
 								<li class="dropdown-header">Konton</li>
 								<li><a href="#">Sparkonto</a></li>
 								<li><a href="#">Fondkonto</a></li>
@@ -93,28 +93,7 @@
 		<script src="apiJavascript.js"></script>
 		 <script  src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<script  src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-		<script>
-			                $("#tableMenu a").click(function(e){
-    e.preventDefault(); // cancel the link behaviour
-    var selText = $(this).text();
-    $("#tableButton").text(selText);
-});
-$("#tableMenu1 a").click(function(e){
-    e.preventDefault(); // cancel the link behaviour
-    var selText = $(this).text();
-    $("#tableButton1").text(selText);
-});   
-$("#tableMenu2 a").click(function(e){
-    e.preventDefault(); // cancel the link behaviour
-    var selText = $(this).text();
-    $("#tableButton2").text(selText);
-}); 
-$("#tableMenu3 a").click(function(e){
-    e.preventDefault(); // cancel the link behaviour
-    var selText = $(this).text();
-    $("#tableButton3").text(selText);
-}); 
-		</script>
+		<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+		-->
 	</body>
 </html>

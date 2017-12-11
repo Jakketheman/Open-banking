@@ -1,7 +1,5 @@
 (function($){
-	transaktion();
-}(jQuery));
-function transaktion(){
+	
 	var textbox = $('div.scrollabletextbox');
 	if($('table').find('td.transaktioner').length==0){
 		$.get('Transaktioner.php',params).done(function(response){
@@ -15,14 +13,8 @@ function transaktion(){
 			
 		});
 	}
-		nyTransaktion();
-}
+		
 
-function nyTransaktion(){
-	if(localStorage.getItem('belopp')!==null){
-		var transaktionTD ='<tr><td class="transaktioner"'+localStorage.getItem('saldo')+'</td><td class="valuta">'+'SEK';
-		transaktionTD += '</td><td class="dataFran">idag</td><td class="dataTill">idag</td>';
-		$('table').prepend(transaktionTD);
-		console.log(localStorage.getItem('belopp')+'hello');
-	}
-}
+}(jQuery))
+
+
