@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="sv">
+	<head>
+		<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">        
+		--><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Open banking</title>
+		<link rel="stylesheet" href="BankDesign.css">
+	</head>
+	<body>
+		<div class="container">
+			<nav id="nav">
+				<div class="innertube">
+					<div class="barButton">
+						<div class="bar1"></div>
+						<div class="bar2"></div>
+						<div class="bar3"></div>
+					</div>
+					<div class="sideMenuBar hiddenBar">
+						<ul>
+							<li><a href="Version1.html">Tillgångar</a></li>
+							<li><a href="Överföring.html">Överföring</a></li>
+							<li><a href="Transaktioner.html">Transaktioner</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<div class="body" id="main">
+				<h1 class="Rubrik">Överföring</h1>
+				<div class="selectMenu">
+					<h2>Från:</h2>
+					<div class="Knapp3 KnappLeft">
+						<div class="dropdown">
+							<button id="tableButton3" class="btn btn-default dropdown-toggle d-inline" type="button" data-toggle="dropdown">Välj bank:</button>
+							<ul id="tableMenu3" class="dropdown-menu kontoFran">
+								<li class="dropdown-header">Banker</li>
+								<li><a href="#">Nordea</a></li>
+								<li><a href="#">Swedbank</a></li>
+								<li class="divider"></li>
+							</ul>
+						</div>
+					</div>
+					<div class="Knapp3 KnappRight">
+						<div class="dropdown">
+							<button id="tableButton2" class="btn btn-default dropdown-toggle d-inline" type="button" data-toggle="dropdown">Välj konto:</button>
+							<ul id="tableMenu2" class="dropdown-menu kontoTill">
+								<li class="dropdown-header">Konton</li>
+								<li><a href="#">Sparkonto</a></li>
+								<li><a href="#">Fondkonto</a></li>
+								<li class="divider"></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="selectMenu">
+					<h2>Till: </h2>
+					<div class="Knapp3 KnappLeft">
+						<div class="dropdown">
+							<button id="tableButton1" class="btn btn-default dropdown-toggle d-inline" type="button" data-toggle="dropdown">Välj bank:</button>
+							<ul id="tableMenu1" class="dropdown-menu">
+								<li class="dropdown-header">Banker</li>
+								<li><a href="#">Nordea</a></li>
+								<li><a href="#">Swedbank</a></li>
+								<li class="divider"></li>
+							</ul>
+						</div>
+					</div>
+					<div class="Knapp3 KnappRight">
+						<div class="dropdown">
+							<button id="tableButton" class="btn btn-default dropdown-toggle d-inline" type="button" data-toggle="dropdown">Välj konto:</button>
+							<ul id="tableMenu" class="dropdown-menu">
+								<li class="dropdown-header">Konton</li>
+								<li><a href="#">Sparkonto</a></li>
+								<li><a href="#">Fondkonto</a></li>
+								<li class="divider"></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+				<div class="form-group"> <label for="usr">Belopp:</label>
+					<input type="number"  class="form-control" id="usr">
+					<button type="button" class="btn btn-outline-info belopp" min="1">Överför</button>
+				</div>
+				
+			</div>
+		</div>
+		<script src="api.js"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src="animation.js"></script>
+		<script src="Transaktioner.js"></script>
+		<script src="apiJavascript.js"></script>
+		 <script  src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script  src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+		<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+		-->
+	</body>
+</html>

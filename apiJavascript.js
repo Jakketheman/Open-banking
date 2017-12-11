@@ -19,14 +19,20 @@ var nordeaKonto;
 			e.preventDefault();
 		if(href=='Version1.html')
 			$('div.body').load(href +' #main' ,RaknaSaldo);
-		else (href=='Överföring.html')
+		else (href=='Overforing.html')
 			$('div.body').load(href +' #main');
 		history.pushState(null,null,href);
-		hrefArray.push(href);
 		console.log('active page '+href);
 	});
 	window.onpopstate = function(){
-		
+		var URL = window.location.pathname;
+		var filename = URL.substring(URL.lastIndexOf('/')+1);
+		if(filename == 'Version1.html'){
+			$('div.body').load(filename + ' #main' ,RaknaSaldo);
+		} else if(filename == 'Overforing.html'){
+			$('div.body').load(filename + '#main');
+		} else
+			window.location.href= 'Transaktioner.html';
 	};
 	$(document).on('click','button.belopp',function(){//knapp från Överföring.html 
 		var belopp = $('input#usr').val();
