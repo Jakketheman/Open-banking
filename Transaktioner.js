@@ -1,7 +1,8 @@
 (function($){
-	
 	var textbox = $('div.scrollabletextbox');
+	//om table har inga <td class="transaktioner"> som child tag
 	if($('table').find('td.transaktioner').length==0){
+		//anropa php fil för att få API
 		$.get('Transaktioner.php',params).done(function(response){
 			for(var i=0;i<=1;i++){
 				var $tableRow =$('<tr>');

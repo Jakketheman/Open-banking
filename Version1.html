@@ -17,7 +17,7 @@
 						<div class="bar3"></div>
 					</div>
 					<div class="sideMenuBar hiddenBar">
-						<ul>
+						<ul class="links">
 							<li><a href="Version1.html"><!--HREF Där skriver man URL-->Tillgångar</a></li>
 							<li><a href="Overforing.html">Överföring</a></li>
 							<li><a href="Transaktioner.html">Transaktioner</a></li>
@@ -32,13 +32,13 @@
 							<nav class="navbar navbar-light"> 
 								<span class="navbar-brand mb-0 h1"><img class="Swedbank" src="swedbank_logo.png" alt="swedbank"></span>
 								<i class="down"></i>
-								<span class="swedbankSaldo"></span>
+								<span class="swedbankSaldo" id="SwedbankSumma" ></span>
 							</nav>
 							<div class="slideMenu">
 								<div class="Slider">
 									<nav class="navbar navbar-light">
 										<span class="navbar-brand mb-0 h1">Sparkonto:</span>
-										<span class="swedbankSparkonto"></span>
+										<span class="swedbankSaldo" id="SwedbankSparkonto"></span>
 									</nav>
 								</div>
 							</div>
@@ -59,9 +59,9 @@
 								</div>
 								<div class="Slider">
 									<nav class="navbar navbar-light">
-										<span class="navbar-brand mb-0 h1">Sparkonto 2:</span>
+										<span class="navbar-brand mb-0 h1">Fondkonto:</span>
 										<span class="nordeaSaldo"></span>
-										<span class="nordeaSaldo" id="NordeaSparkonto2">  </span>
+										<span class="nordeaSaldo" id="NordeaFondkonto">  </span>
 									</nav>
 								</div>
 							</div>
@@ -77,8 +77,10 @@
 			</div>
 		<script src="api.js"></script>
 		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script> 
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+	
 		<script src="animation.js"></script>
 		
 		<script src="apiJavascript.js"></script>

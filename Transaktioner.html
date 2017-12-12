@@ -17,21 +17,19 @@
 						<div class="bar3"></div>
 					</div>
 					<div class="sideMenuBar hiddenBar">
-						<ul>
+						<ul class="links">
 							<li><a href="Version1.html">Tillgångar</a></li>
 							<li><a href="Overforing.html">Överföring</a></li>
 							<li><a href="Transaktioner.html">Transaktioner</a></li>
 						</ul>
-						<div  class="line-separator">
-						<h4 class="Rubrik">Transaktioner</h4>
-						<h5 id="Rubriken" class="UnderRubrik">Swedbank</h5>
-						 <ul >
+						<h2 class="Rubrik">Transaktioner</h2>
+						<h3 id="Rubriken">Swedbank</h3>
+						 <ul>
 							<li id="Konto" data-text="Konto" class="text-clickables"><a href="#">Konto</a></li>
-							<li id="SparKonto" data-text="SparKonto" class="text-clickables"><a href="#">SparKonto</a></li>
+							<li id="SparKonto" data-text="SparKonto" class="text-clickables"><a href="#" >SparKonto</a></li>
 							<li id="Fonder" data-text="Fonder" class="text-clickables"><a href="#">Fonder</a></li>
 							<li id="Aktier" data-text="Aktier" class="text-clickables"><a href="#">Aktier</a></li>
 						</ul>
-						</div>
 					</div>
 				</div>
 			</nav>
@@ -55,12 +53,13 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 		<script src="animation.js"></script><script src="Transaktioner.js"></script>
 		<script src="apiJavascript.js"></script>
-		
 		<script>
-			$(function() {
-			  $(".text-clickables").on("click", function(e) { $("#textAndring").text($(this).data("text")); });
-		  })
-	  </script>
-
+              $('.text-clickables').on("click", function(e) { 
+			  $("#textAndring").text($(this).data("text")); 
+			  e.preventDefault();
+			  }); 
+          
+		</script>
+		
 	</body>
 </html>
