@@ -22,14 +22,16 @@
 							<li><a href="Overforing.html">Överföring</a></li>
 							<li><a href="Transaktioner.html">Transaktioner</a></li>
 						</ul>
-						<h2 class="Rubrik">Transaktioner</h2>
-						<h3 id="Rubriken">Swedbank</h3>
-						 <ul>
+						<div  class="line-separator">
+						<h4 class="Rubrik">Transaktioner</h4>
+						<h5 id="Rubriken" class="UnderRubrik">Swedbank</h5>
+						 <ul >
 							<li id="Konto" data-text="Konto" class="text-clickables"><a href="#">Konto</a></li>
 							<li id="SparKonto" data-text="SparKonto" class="text-clickables"><a href="#">SparKonto</a></li>
 							<li id="Fonder" data-text="Fonder" class="text-clickables"><a href="#">Fonder</a></li>
 							<li id="Aktier" data-text="Aktier" class="text-clickables"><a href="#">Aktier</a></li>
 						</ul>
+						</div>
 					</div>
 				</div>
 			</nav>
@@ -54,5 +56,11 @@
 		<script src="animation.js"></script><script src="Transaktioner.js"></script>
 		<script src="apiJavascript.js"></script>
 		
+		<script>
+			$(function() {
+			  $(".text-clickables").on("click", function(e) { $("#textAndring").text($(this).data("text")); });
+		  })
+	  </script>
+
 	</body>
 </html>
